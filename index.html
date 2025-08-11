@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HR Attrition Prediction</title>
+</head>
+<body>
+    <h1>HR Attrition Prediction</h1>
+
+    <!-- Upload Dataset -->
+    <h2>Upload Dataset</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    <!-- Train Model -->
+    <h2>Train Model</h2>
+    <form action="/train" method="get">
+        <button type="submit">Train Model</button>
+    </form>
+
+    <!-- Predict Form -->
+    <h2>Predict Attrition</h2>
+    <form action="/predict" method="post">
+        <!-- Form fields generated from dataset columns -->
+        
+        <label>Age:</label>
+        <input type="number" name="ï»¿Age" step="1" required><br>
+
+        <label>BusinessTravel:</label>
+        <input type="text" name="BusinessTravel" required><br>
+
+        <label>DailyRate:</label>
+        <input type="number" name="DailyRate" step="1" required><br>
+
+        <label>Department:</label>
+        <input type="text" name="Department" required><br>
+
+        <label>DistanceFromHome:</label>
+        <input type="number" name="DistanceFromHome" step="1" required><br>
+
+        <label>Education:</label>
+        <input type="number" name="Education" step="1" required><br>
+
+        <label>EducationField:</label>
+        <input type="text" name="EducationField" required><br>
+
+        <label>EmployeeCount:</label>
+        <input type="number" name="EmployeeCount" step="1" required><br>
+
+        <label>EmployeeNumber:</label>
+        <input type="number" name="EmployeeNumber" step="1" required><br>
+
+        <label>EnvironmentSatisfaction:</label>
+        <input type="number" name="EnvironmentSatisfaction" step="1" required><br>
+
+        <label>Gender:</label>
+        <input type="text" name="Gender" required><br>
+
+        <label>HourlyRate:</label>
+        <input type="number" name="HourlyRate" step="1" required><br>
+
+        <label>JobInvolvement:</label>
+        <input type="number" name="JobInvolvement" step="1" required><br>
+
+        <label>JobLevel:</label>
+        <input type="number" name="JobLevel" step="1" required><br>
+
+        <label>JobRole:</label>
+        <input type="text" name="JobRole" required><br>
+
+        <label>JobSatisfaction:</label>
+        <input type="number" name="JobSatisfaction" step="1" required><br>
+
+        <label>MaritalStatus:</label>
+        <input type="text" name="MaritalStatus" required><br>
+
+        <label>MonthlyIncome:</label>
+        <input type="number" name="MonthlyIncome" step="1" required><br>
+
+        <label>MonthlyRate:</label>
+        <input type="number" name="MonthlyRate" step="1" required><br>
+
+        <label>NumCompaniesWorked:</label>
+        <input type="number" name="NumCompaniesWorked" step="1" required><br>
+
+        <label>Over18:</label>
+        <input type="text" name="Over18" required><br>
+
+        <label>OverTime:</label>
+        <input type="text" name="OverTime" required><br>
+
+        <label>PercentSalaryHike:</label>
+        <input type="number" name="PercentSalaryHike" step="1" required><br>
+
+        <label>PerformanceRating:</label>
+        <input type="number" name="PerformanceRating" step="1" required><br>
+
+        <label>RelationshipSatisfaction:</label>
+        <input type="number" name="RelationshipSatisfaction" step="1" required><br>
+
+        <label>StandardHours:</label>
+        <input type="number" name="StandardHours" step="1" required><br>
+
+        <label>StockOptionLevel:</label>
+        <input type="number" name="StockOptionLevel" step="1" required><br>
+
+        <label>TotalWorkingYears:</label>
+        <input type="number" name="TotalWorkingYears" step="1" required><br>
+
+        <label>TrainingTimesLastYear:</label>
+        <input type="number" name="TrainingTimesLastYear" step="1" required><br>
+
+        <label>WorkLifeBalance:</label>
+        <input type="number" name="WorkLifeBalance" step="1" required><br>
+
+        <label>YearsAtCompany:</label>
+        <input type="number" name="YearsAtCompany" step="1" required><br>
+
+        <label>YearsInCurrentRole:</label>
+        <input type="number" name="YearsInCurrentRole" step="1" required><br>
+
+        <label>YearsSinceLastPromotion:</label>
+        <input type="number" name="YearsSinceLastPromotion" step="1" required><br>
+
+        <label>YearsWithCurrManager:</label>
+        <input type="number" name="YearsWithCurrManager" step="1" required><br>
+
+        <br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
